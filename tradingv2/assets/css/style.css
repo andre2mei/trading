@@ -1,0 +1,72 @@
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#center {
+    text-align: center;
+}
+#trading {
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #ddd;
+    display: inline-block;
+    text-align: left;
+}
+.form {
+    display: flex;
+}
+.form > * {
+    flex: 1;
+}
+.inp-selisih {
+    flex: 3;
+}
+input, button {
+    border: 1px solid #ddd;
+    padding: 10px 10px;
+}
+::placeholder {
+    color: #ddd;
+}
+button {
+    background: #4CAF50;
+    color: #fff;
+    text-transform: uppercase;
+}
+.wrap-selisih {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 8px;
+    margin-bottom: 1px;
+    border: 1px solid #ddd;
+    padding: 8px 0 6px 0;
+}
+#hasil {
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #ddd;
+    padding: 8px 0 6px 0;
+    margin-top: 1px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-weight: 700;
+}
+table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+table tr:hover {
+    background-color: #ddd;
+}
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}

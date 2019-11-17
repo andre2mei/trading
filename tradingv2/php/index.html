@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trading</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/trading.js"></script>
+    <script src="../assets/js/canvasjs.min.js"></script>
+</head>
+<div>
+    <div id="center">
+        <div id="trading">
+            <div class="form">
+                <input type="number" min="0" class="inp-selisih" placeholder="masukan selisih">
+                <button type="button" class="btn-selisih">Save</button>
+            </div>
+            <div class="wrap-selisih">Selisih Sekarang <span id="selisih"></span></div>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>LOW PRICE</th>
+                    <th>HIGH PRICE</th>
+                    <th>LAST PRICE</th>
+                </tr>
+                <tr style="color: blue;">
+                    <th>BINANCE</th>
+                    <td><span class="binancelowprice"></span></td>
+                    <td><span class="binancehighprice"></span></td>
+                    <td>
+                        <strong class="hasilbinance"></strong>
+                        <span class="binancelastprice"></span>
+                    </td>
+                </tr>
+                <tr style="color:red">
+                    <th>HUOBI</th>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <strong class="hasilhuobi"></strong>
+                        <span class="huobilastprice"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>SELISIH</th>
+                    <td></td>
+                    <td></td>
+                    <td><strong class="hasil"></strong><span class="selisihlastprice"></span></td>
+                </tr>
+            </table>
+            <div id="hasil">
+                <span class="message"></span>
+                <span class="messagelastprice"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="jam"></div>
+    <div id="linechart" style="height: 300px; width: 100%;"></div>
+</body>
+</html>
